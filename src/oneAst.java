@@ -1,9 +1,9 @@
 /**
  * Created by Jasmine on 13/02/2016.
  */
-public class oneAst {
+public class OneAst {
 
-    public oneAst(){}
+    public OneAst(){}
 
     public void oneMeth(){System.out.println("*");}
 

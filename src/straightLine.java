@@ -2,15 +2,14 @@
  * Created by Jasmine on 13/02/2016.
  */
 
-import java.util.Scanner;
 
-public class straightLine {
+public class StraightLine {
 
     int i;
     int h;
     int j;
 
-    public straightLine(int width, int height){
+    public StraightLine(int width, int height){
         this.i = width;
         this.h = height;
     }
@@ -20,6 +19,7 @@ public class straightLine {
         for(j = 0; j < i; j++){
             System.out.print("*");
         }
+        System.out.println();
     }
 
     public void verticalLine(){
