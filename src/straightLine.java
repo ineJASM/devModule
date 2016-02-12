@@ -7,18 +7,24 @@ import java.util.Scanner;
 public class straightLine {
 
     int i;
+    int h;
+    int j;
 
-    public straightLine(int i){
-        this.i = i;
+    public straightLine(int width, int height){
+        this.i = width;
+        this.h = height;
     }
 
-    public void createLine(){
+    public void horizontalLine(){
 
-        for(int j = 0; j < i; j++){
+        for(j = 0; j < i; j++){
             System.out.print("*");
         }
+    }
 
-
-
+    public void verticalLine(){
+        for(j = 0; j < h; j++){
+            System.out.println("*");
+        }
     }
 }
