@@ -14,21 +14,25 @@ public class Main {
         System.out.println("Please input number of asterisks to print in the vertical line:");
         int intVT = scan.nextInt();
 
+        System.out.println("Please input number of asterisks to print in the right triangle:");
+        int intRT = scan.nextInt();
 
-        oneAst one = new oneAst();
-        straightLine st = new straightLine(intST, intVT);
+
+        OneAst one = new OneAst();
+        StraightLine st = new StraightLine(intST, intVT);
+        RightTriangle rT = new RightTriangle(intRT);
 
         System.out.println("Now Printing One Asterisk!");
         one.oneMeth();
-        System.out.println();
 
         System.out.println("Now Printing " + intST +" Asterisks in a horizontal line");
         st.horizontalLine();
-        System.out.println();
 
         System.out.println("Now Printing " + intVT +" Asterisks in a vertical line");
         st.verticalLine();
-        System.out.println();
+
+        System.out.println("Now Printing " + intRT +" Asterisks in a right triangle");
+        rT.printTriangle();
 
         scan.close();
     }
