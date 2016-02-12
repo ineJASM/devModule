@@ -23,12 +23,16 @@ public class Main {
         System.out.println("Please input height of the Diamond:");
         int intD = scan.nextInt();
 
+        System.out.println("Please input height of the Named Diamond:");
+        int intND = scan.nextInt();
+
 
         OneAst one = new OneAst();
         StraightLine st = new StraightLine(intST, intVT);
         RightTriangle rT = new RightTriangle(intRT);
         NotRT nRT = new NotRT(intNRT);
         Diamond d = new Diamond(intD);
+        NamedDiamond nD = new NamedDiamond(intND);
 
         System.out.println("Now Printing One Asterisk!");
         one.oneMeth();
@@ -47,6 +51,9 @@ public class Main {
 
         System.out.println("Now Printing diamond of height " + intD);
         d.printDiamond();
+
+        System.out.println("Now Printing named diamond of height " + intD);
+        nD.printDiamond();
 
         scan.close();
     }
