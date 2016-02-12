@@ -1,0 +1,25 @@
+/**
+ * Created by Jasmine on 13/02/2016.
+ */
+public class FizzBuzz {
+
+    public FizzBuzz(){}
+
+    public void fizzerbuzzer() {
+        int i;
+        for (i = 1; i < 101; i++) {
+            if( (i%3 == 0) && (i%5 == 0)){
+                System.out.println("FIZZBUZZ");
+            }
+            else if ((i%3) == 0) {
+                System.out.println("FIZZ");
+            }
+            else if(i%5 == 0) {
+                System.out.println("BUZZ");
+            }
+            else{
+                System.out.println(i);
+            }
+        }
+    }
+}

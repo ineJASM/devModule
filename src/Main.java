@@ -56,5 +56,12 @@ public class Main {
         nD.printDiamond();
 
         scan.close();
+
+        //FizzBuzz begins
+        FizzBuzz fb = new FizzBuzz();
+        fb.fizzerbuzzer();
+
+        //prime numbers
+
     }
 }
