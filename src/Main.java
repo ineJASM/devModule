@@ -55,13 +55,20 @@ public class Main {
         System.out.println("Now Printing named diamond of height " + intD);
         nD.printDiamond();
 
-        scan.close();
+
 
         //FizzBuzz begins
         FizzBuzz fb = new FizzBuzz();
         fb.fizzerbuzzer();
 
-        //prime numbers
+        System.out.println();
 
+        //prime numbers
+        System.out.println("Please input number to calculate its prime factors");
+        int num = scan.nextInt();
+        PrimeCalc pc = new PrimeCalc(num);
+        pc.calculateFactors(num);
+
+        scan.close();
     }
 }
