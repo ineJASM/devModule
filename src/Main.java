@@ -26,13 +26,14 @@ public class Main {
         System.out.println("Please input height of the Named Diamond:");
         int intND = scan.nextInt();
 
-
+        //initialise objects
         OneAst one = new OneAst();
         StraightLine st = new StraightLine(intST, intVT);
         RightTriangle rT = new RightTriangle(intRT);
         NotRT nRT = new NotRT(intNRT);
         Diamond d = new Diamond(intD);
         NamedDiamond nD = new NamedDiamond(intND);
+        PrimeCalc pc = new PrimeCalc();
 
         System.out.println("Now Printing One Asterisk!");
         one.oneMeth();
@@ -55,8 +56,6 @@ public class Main {
         System.out.println("Now Printing named diamond of height " + intD);
         nD.printDiamond();
 
-
-
         //FizzBuzz begins
         FizzBuzz fb = new FizzBuzz();
         fb.fizzerbuzzer();
@@ -66,8 +65,7 @@ public class Main {
         //prime numbers
         System.out.println("Please input number to calculate its prime factors");
         int num = scan.nextInt();
-        PrimeCalc pc = new PrimeCalc(num);
-        pc.calculateFactors(num);
+        pc.generate(num);
 
         scan.close();
     }
